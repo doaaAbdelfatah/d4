@@ -76,14 +76,21 @@
                             <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
-
                 </div>
             @endif
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel from D1
-                </div>
-
+                @component('my_comp')
+                @slot('title')
+                    Message
+                @endslot
+                    Welcome
+                @endcomponent
+                @component('my_comp')
+                    Text
+                @endcomponent
+                @component('my_comp')
+                    Bye Bye
+                @endcomponent
             </div>
         </div>
     </body>

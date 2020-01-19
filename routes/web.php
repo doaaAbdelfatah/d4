@@ -17,3 +17,9 @@ Route::get("/show/{x}/{y}" ,"ViewTestController@index");
 Route::get("/about" ,"ViewTestController@about");
 Route::get("/home" ,"ViewTestController@home");
 
+Route::get("/products" ,"ProductController@show");
+
+
+Route::get("/features" ,function(){
+    return view("features");
+});
