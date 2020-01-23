@@ -75,3 +75,5 @@ Route::get("/file" , function (){
 
 Route::get("/jobs" ,"DBController@index");
 Route::get("/jobs/show" ,"DBController@show");
+Route::get("/products/all" ,"ProductController@show_all")->name("products");
+Route::post("/products/add" ,"ProductController@store");

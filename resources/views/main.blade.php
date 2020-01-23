@@ -44,9 +44,9 @@
   </div>
 </nav>
 
-@component('test')
+{{-- @component('test')
     Message
-@endcomponent
+@endcomponent --}}
 
 @yield('header1')
 
